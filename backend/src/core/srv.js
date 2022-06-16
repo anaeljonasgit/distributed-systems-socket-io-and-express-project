@@ -114,26 +114,3 @@ const SRV = {
 };
 
 module.exports = SRV;
-
-// SRV.api.ts.createTicket({ type: 'N' });
-// SRV.api.ts.createTicket({ type: 'N' });
-// SRV.api.ts.createTicket({ type: 'N' });
-// SRV.api.ts.createTicket({ type: 'N' });
-// SRV.api.ts.createTicket({ type: 'N' });
-// SRV.api.ts.createTicket({ type: 'P' });
-// SRV.api.ts.createTicket({ type: 'N' });
-// SRV.api.ts.createTicket({ type: 'N' });
-// SRV.api.ts.createTicket({ type: 'P' });
-// SRV.api.ts.createTicket({ type: 'P' });
-// SRV.api.ts.createTicket({ type: 'P' });
-// SRV.api.ts.createTicket({ type: 'N' });
-
-// SRV.api.ta.callNextTicket();
-// SRV.api.ta.processAtualTicket();
-// SRV.api.ta.callNextTicket();
-// SRV.api.ta.processAtualTicket();
-// SRV.api.ta.callNextTicket();
-// SRV.api.ta.processAtualTicket();
-// SRV.api.ta.callNextTicket();
-
-// console.log(SRV.api.tv.getTicketsData());
