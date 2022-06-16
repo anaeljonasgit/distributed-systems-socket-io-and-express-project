@@ -13,6 +13,6 @@
     "start": "nodemon src/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Equipe de Sistemas Distribuídos",
   "license": "ISC"
 }
