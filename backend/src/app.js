@@ -19,8 +19,8 @@ io.on('connection', (socket) => {
         try {
             core.api.ts.createTicket({ type });
             core.api.srv.update(socket);
-        } catch {
-            socket.emit('ts_create_ticket_error');
+        } catch(error) {
+            socket.emit('ts_create_ticket_error', error.message);
         };
     });
 
@@ -28,8 +28,8 @@ io.on('connection', (socket) => {
         try {
             core.api.ta.callNextTicket();
             core.api.srv.update(socket);
-        } catch {
-            socket.emit('ta_call_next_ticket_error');
+        } catch(error) {
+            socket.emit('ta_call_next_ticket_error', error.message);
         };
     });
 
@@ -37,8 +37,8 @@ io.on('connection', (socket) => {
         try {
             core.api.ta.processAtualTicket();
             core.api.srv.update(socket);
-        } catch {
-            socket.emit('ta_process_atual_ticket_error');
+        } catch(error) {
+            socket.emit('ta_process_atual_ticket_error', error.message);
         };
     });
 });

@@ -7,7 +7,8 @@ const SRV = {
                 N: 0,
                 P: 0
             },
-            atual: []
+            atual: [],
+            last_generated: {},
         }
     },
 
@@ -36,6 +37,10 @@ const SRV = {
                 });
 
                 SRV.api.ts.sortOpenTickets();
+                SRV.state.tickets.last_generated = {
+                    id: `${type}${SRV.state.tickets.count[type]}`,
+                    type
+                }
             },
 
             sortOpenTickets() {
@@ -100,13 +105,15 @@ const SRV = {
                 console.log({
                     open: SRV.state.tickets.open,
                     closed: SRV.state.tickets.closed,
-                    atual: SRV.state.tickets.atual
+                    atual: SRV.state.tickets.atual,
+                    last: SRV.state.tickets.last_generated,
                 });
 
                 return {
                     open: SRV.state.tickets.open,
                     closed: SRV.state.tickets.closed,
-                    atual: SRV.state.tickets.atual
+                    atual: SRV.state.tickets.atual,
+                    last: SRV.state.tickets.last_generated,
                 };
             }
         }
