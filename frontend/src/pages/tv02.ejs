@@ -64,11 +64,16 @@
 
         socket.on('srv_tickets_data', (data) => {
             tv.render({ data });
+            if (data.atual.length) {
+                ticket_type.innerText = data.atual[0].type === 'N' ? 'NORMAL' : 'PRIORITÁRIO';
+            } else {
+                ticket_type.innerText = '';
+            }
         });
 
-        socket.on('srv_tickets_data', (data) => {
-            ticket_type.innerText = data.atual[0].type === 'N' ? 'NORMAL' : 'PRIORITÁRIO';
-        });
+        // socket.on('srv_tickets_data', (data) => {
+            
+        // });
 
         const tv = {
             render({ data }) {
