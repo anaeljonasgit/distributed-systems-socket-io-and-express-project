@@ -4,6 +4,6 @@ Equipe:
 Jeferson Mendes,
 Samuel Alcantara,
 Felipe Correia,
-Luis Pedro,
+Luiz Pedro,
 Cosmo Pereira,
 Anael Jonas
